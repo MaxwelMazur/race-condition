@@ -28,6 +28,8 @@ func main() {
 	}
 
 	wg.Wait()
+
+	fmt.Println("========================")
 	fmt.Println("Goroutines: ", runtime.NumGoroutine())
 	fmt.Println("Value final: ", count)
 }
